@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>İletişim</h3>
+<hr>
+<form>
+ <div class="form-group">
+    <label for="exampleFormControlInput1">Ad</label>
+    <input  class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlInput1">Soyad</label>
+    <input  class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Mesaj</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+   <p><a class="btn btn-light btn-lg" href="#" role="button">Gönder</a></p>
+</form>
+<hr>
+{% endblock body %}
+

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+      <div class="row">
+        <div class="col-md-4">
+        <div style="text-align: center;">
+         <img  src="{{url_for('static', filename='images/consumption.jpg')}}" align="middle" style="width:200px" />  
+        
+          <p class="bottomTitle">Elektrik Tüketim Miktarını Tahmin Etmek İstiyorum</p>
+          
+          <p><a class="btn btn-light" href="/analiz" role="button">Tüketim</a></p>
+        </div>
+        </div>
+        <div class="col-md-4">
+         <div style="text-align: center;">
+         <br>
+         <img  src="{{url_for('static', filename='images/production.png')}}" align="middle" style="width:130px" />  
+        <br><br>
+          <p class="bottomTitle">Elektrik Üretim Karmasını Hesaplamak İstiyorum </p>
+          
+          <p><a class="btn btn-light" href="/analiz" role="button">Üretim</a></p>
+        </div>
+
+
+         
+        </div>
+        <div class="col-md-4">
+
+         <div style="text-align: center;">
+         <br>
+         <img  src="{{url_for('static', filename='images/both.png')}}" align="middle" style="width:130px" />  
+                <br>   <br>
+          <p class="bottomTitle">İkisini birlikte hesaplamak istiyorum </p>
+  
+          
+          <p><a class="btn btn-light" href="/analiz" role="button">Her İkisi</a></p>
+          </div>
+        </div>
+      </div>
+  
+      <hr>
+
+   
+
+
+{% endblock %}
